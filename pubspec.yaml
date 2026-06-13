@@ -1,0 +1,48 @@
+name: naaro
+description: A silent real-world nearby communication app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase (no firebase_storage needed)
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.14.0
+
+  # BLE
+  flutter_blue_plus: ^1.31.15
+
+  # Image processing (resize + Base64 encode — replaces Storage)
+  image: ^4.1.7
+
+  # UI
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  timeago: ^3.6.1
+  image_picker: ^1.0.7
+
+  # State management
+  provider: ^6.1.1
+
+  # Utils
+  uuid: ^4.3.3
+  shared_preferences: ^2.2.2
+  permission_handler: ^11.3.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
